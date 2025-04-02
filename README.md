@@ -1,33 +1,61 @@
-# JavascriptFinal
+# World Bank Data Map - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+This Angular project connects to the **World Bank API** to pull real-time country data and displays it interactively on a map. Users can hover over a country on the map to get detailed data, such as population, capital city, income level, and more. This project served as my first dip into working with APIs and integrating external data into an Angular application.
 
-## Development server
+The project is built with Angular and utilizes various components to fetch and display API data dynamically. The current design is functional, but future improvements will focus on redesigning the UI for a better user experience.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
+- **World Map Integration**: A world map where users can hover over countries to view real-time data.
+- **API Data**: Fetch country-specific data from the **World Bank API**, including:
+  - Population
+  - Capital City
+  - Income Level
+  - and more.
+- **Dynamic Data Display**: When hovering over a country, relevant data is fetched and displayed in a user-friendly format.
 
-## Code scaffolding
+## Technologies Used
+- **Angular**: The core framework for building the application.
+- **TypeScript**: Provides type safety and better management of application logic.
+- **World Bank API**: Used to fetch real-time country data.
+- **Bootstrap**: For basic styling and responsive layout.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+Follow these steps to get the project running locally:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/world-bank-data-map.git
+    ```
+2. **Navigate to the project directory**:
+    ```bash
+    cd world-bank-data-map
+    ```
+3. **Install the dependencies**:
+    ```bash
+    npm install
+    ```
 
-## Running unit tests
+## Running the Application
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To start the application locally, run:
 
-## Running end-to-end tests
+```bash
+ng serve
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Then open your browser and go to `http://localhost:4200` to see the application in action.
 
-## Further help
+## Screenshots
+<img width="1139" alt="Screenshot 2025-04-02 at 9 07 51 PM" src="https://github.com/user-attachments/assets/1660bfa1-fff5-4275-aacd-fc29add3baf7" />
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
-Student ID: 012358525
-NPM: 10.8.2
-Angular Version: 18.2.10
-OS: MacOS 12.7.4
-Node: v20.18.0
+## Future Enhancements
+- **UI Redesign**: Improve the UI for better user experience and aesthetics.
+- **Interactive Features**: Add features such as country search, filter by income level, and display additional data (e.g., GDP, literacy rates).
+- **Mobile Responsiveness**: Make the map fully responsive for mobile devices.
+- **Data Visualization**: Use charts and graphs to visualize the data in a more engaging way.
+
+## Learnings
+- **APIs in Angular**: This project introduced me to working with external APIs in Angular, including how to structure HTTP requests, handle responses, and dynamically display data in the UI.
+- **Angular Components**: I gained a better understanding of how Angular components can be used to create modular and reusable pieces of logic and UI.
